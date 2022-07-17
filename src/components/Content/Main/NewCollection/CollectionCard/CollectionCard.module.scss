@@ -1,0 +1,54 @@
+.collectioncard {
+  margin-bottom: 145px;
+  //   background-color: antiquewhite;
+  .image {
+    &:hover {
+      filter: brightness(40%);
+      .openproduct {
+        svg {
+          position: relative;
+          bottom: 300px;
+          width: 100%;
+          visibility: visible;
+        }
+      }
+    }
+    img {
+      height: 478px;
+      width: 350px;
+    }
+    .openproduct {
+      svg {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 7px;
+  }
+  .prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .price,
+    .oldprice {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #998e78;
+    }
+
+    .oldprice {
+      margin-right: 10px;
+      text-decoration-line: line-through;
+    }
+  }
+}

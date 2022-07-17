@@ -1,0 +1,16 @@
+@import "./../../../../variables.scss";
+.whatsimportant {
+  margin-bottom: $marginbottom;
+  .heading {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    margin-bottom: 92px;
+  }
+  .triggers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

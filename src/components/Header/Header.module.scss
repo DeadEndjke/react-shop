@@ -1,0 +1,72 @@
+@import './../../variables.scss';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .logowrapper{
+        display: flex;
+        align-items: center;
+        margin-top: 51px;
+        
+        .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18.78px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        
+        }
+    }
+    .navbar{
+        margin-top: 54px;
+        
+        .navlinks{
+            display: flex;
+            align-items: center;
+            padding-inline-start: 0px;
+
+            .navlink{
+                list-style: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                margin-right: 45px;
+                &:hover{
+                    color: $active-color;
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+
+    .call{
+        display: flex;
+        align-items: center;
+        margin-top: 54px;
+        
+        
+        .phonenumber{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+
+        }
+    }
+
+    .basket{
+        margin-top: 53px;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+.back{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    .leftwhite, .rightbrown{
+        width: 50vw;
+        height: 826px;
+    }
+
+    .leftwhite{
+        background-color: white;
+    }
+
+    .rightbrown{
+        background-color: rgba(241, 234, 220, 1);
+    }
+}

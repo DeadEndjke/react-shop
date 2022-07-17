@@ -1,0 +1,21 @@
+.trigger {
+  width: 100%;
+  max-width: 350px;
+  .img {
+    margin-bottom: 37px;
+  }
+  .heading,
+  .paragraph {
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+  }
+  .heading {
+    font-size: 25px;
+    margin-bottom: 24px;
+  }
+  .paragraph {
+    width: 305px;
+    font-size: 17px;
+  }
+}

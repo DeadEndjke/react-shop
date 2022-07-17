@@ -1,0 +1,20 @@
+.rightimages{
+    img{
+        position: relative;
+        z-index: -1;
+    }
+
+    .firstimg{
+        left:100px;
+        top: 40px;
+    }
+    .secondimg{
+        top: -600px;
+        left: 400px;
+    }
+    .thirdimg{
+       top: -250px;
+       left: -190px;
+    }
+    
+}
