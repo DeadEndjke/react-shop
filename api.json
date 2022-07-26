@@ -1,0 +1,188 @@
+[
+  {
+    "img": "https://coolpeople.moscow/images/002/304/120/2304120/420xno_crop/brooke-cagle-32429.jpg",
+    "price": "$129",
+    "old_price": "",
+
+    "categories": "T-shirt",
+
+    "related_products": [
+      {
+        "id": "1",
+        "related": "2"
+      },
+      {
+        "id": "2",
+        "related": "3"
+      }
+    ],
+    "size": [
+      {
+        "id": "1",
+        "title": "S"
+      },
+      {
+        "id": "2",
+        "title": "M"
+      },
+      {
+        "id": "3",
+        "title": "L"
+      }
+    ],
+    "color": [
+      {
+        "id": "1",
+        "color": "antiquewhite"
+      },
+      {
+        "id": "2",
+        "color": "black"
+      },
+      {
+        "id": "3",
+        "color": "red"
+      }
+    ],
+    "name": "Футболка USA",
+    "id": "1"
+  },
+  {
+    "img": "https://acapulcotur.ru/wp-content/uploads/2020/07/chermoe_more_avtobusnui_tur.jpg",
+    "price": "$129",
+    "old_price": "$229",
+    "categories": "swimsuit",
+    "related_products": [
+      {
+        "id": "1",
+        "related": "1"
+      },
+      {
+        "id": "2",
+        "related": "3"
+      }
+    ],
+    "size": [
+      {
+        "id": "1",
+        "title": "S"
+      },
+      {
+        "id": "2",
+        "title": "M"
+      },
+      {
+        "id": "3",
+        "title": "L"
+      },
+      {
+        "id": "4",
+        "title": "XL"
+      }
+    ],
+    "color": [
+      {
+        "id": "1",
+        "color": "antiquewhite"
+      },
+      {
+        "id": "2",
+        "color": "black"
+      }
+    ],
+    "name": "Купальник",
+    "id": "2"
+  },
+  {
+    "img": "https://ae04.alicdn.com/kf/Hc7a51427120f487ea122dfd9efc49a47i/2021.jpg_640x640.jpg",
+    "price": "$129",
+    "old_price": "$229",
+    "categories": "sweetshot",
+    "related_products": [
+      {
+        "id": "1",
+        "related": "1"
+      },
+      {
+        "id": "2",
+        "related": "2"
+      }
+    ],
+    "size": [
+      {
+        "id": "1",
+        "title": "S"
+      },
+      {
+        "id": "2",
+        "title": "M"
+      },
+      {
+        "id": "3",
+        "title": "L"
+      },
+      {
+        "id": "4",
+        "title": "XL"
+      },
+      {
+        "id": "5",
+        "title": "XXL"
+      }
+    ],
+    "color": [
+      {
+        "id": "1",
+        "color": "antiquewhite"
+      }
+    ],
+    "name": "sweetshot",
+    "id": "3"
+  },
+  {
+    "img": "https://images.wbstatic.net/big/new/7350000/7358251-1.jpg",
+    "price": "$129",
+    "old_price": "$229",
+    "categories": "coat",
+    "related_products": [
+      {
+        "id": "1",
+        "related": "1"
+      },
+      {
+        "id": "2",
+        "related": "2"
+      }
+    ],
+    "size": [
+      {
+        "id": "1",
+        "title": "S"
+      },
+      {
+        "id": "2",
+        "title": "M"
+      },
+      {
+        "id": "3",
+        "title": "L"
+      },
+      {
+        "id": "4",
+        "title": "XL"
+      },
+      {
+        "id": "5",
+        "title": "XXL"
+      }
+    ],
+    "color": [
+      {
+        "id": "1",
+        "color": "brown"
+      }
+    ],
+    "name": "coat",
+    "id": "4"
+  }
+]

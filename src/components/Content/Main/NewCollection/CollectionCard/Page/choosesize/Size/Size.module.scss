@@ -1,0 +1,17 @@
+.sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .size {
+    width: 41px;
+    height: 41px;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 14px;
+    &:focus {
+      background-color: black;
+      color: white;
+    }
+  }
+}

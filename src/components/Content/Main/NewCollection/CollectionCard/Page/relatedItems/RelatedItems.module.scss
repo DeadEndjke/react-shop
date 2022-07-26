@@ -1,0 +1,26 @@
+.heading {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  margin-bottom: 67px;
+}
+.related {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1200px) {
+  .heading {
+    text-align: center;
+  }
+  .related {
+    display: grid;
+    flex-direction: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 759px) {
+    .related {
+      grid-template-columns: 1fr;
+    }
+  }
+}

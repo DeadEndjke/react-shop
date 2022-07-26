@@ -1,0 +1,55 @@
+@import "./../../../variables.scss";
+
+.basket {
+  margin-bottom: 219px;
+  .heading {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    margin-top: 162px;
+    margin-bottom: 26px;
+  }
+  .path {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 26px;
+    span {
+      color: #909090;
+    }
+  }
+
+  .value {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 114px;
+    .shoplink {
+      color: #6e9c9f;
+      &:hover {
+        border-bottom: 1px solid #6e9c9f;
+      }
+    }
+  }
+  .checkoutbtn {
+    text-align: right;
+    .checkout {
+      padding: 22px 50px;
+      background: #6e9c9f;
+      color: white;
+      border: none;
+      margin-top: 72px;
+      &:hover {
+        background: #467057;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .checkoutbtn {
+      text-align: center;
+    }
+  }
+}

@@ -5,13 +5,15 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  // outline: 2px solid red;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }

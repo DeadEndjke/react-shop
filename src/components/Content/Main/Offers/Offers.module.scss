@@ -17,6 +17,7 @@
   .offerscontainer {
     max-width: 400px;
     text-align: end;
+
     .paragraph {
       height: 112px;
       margin-bottom: 52px;
@@ -53,8 +54,8 @@
 
     .sliderbuttons {
       margin-top: 76px;
-
-      .sliderbutton {
+      .sliderbutton,
+      .active {
         cursor: pointer;
         border: none;
         background-color: #d1d1d1;
@@ -65,8 +66,30 @@
           background-color: white;
           border: 3px solid #000;
         }
-        &:focus {
-          background-color: black;
+      }
+      .active {
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .offers {
+    margin-top: 62px;
+    .heading {
+      margin-bottom: 35px;
+      font-size: 45px;
+    }
+    .offerscontainer {
+      .paragraph {
+        margin-bottom: 0px;
+        font-size: 15px;
+        width: auto;
+      }
+      .buttons {
+        .btndown {
+          display: none;
         }
       }
     }

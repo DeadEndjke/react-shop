@@ -1,0 +1,110 @@
+@import "./../../../../variables.scss";
+.basketform {
+  max-width: 500px;
+  margin-bottom: $marginbottom;
+}
+
+h1 {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+p {
+  color: #bf1650;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}
+.choosecity {
+  margin-bottom: 35px;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+
+  border: 1px solid white;
+  border-bottom: 1px solid black;
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  font-size: 14px;
+}
+input[type="text"] {
+  width: 100%;
+}
+.messageinput {
+  height: 100px;
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background: #6e9c9f;
+  color: white;
+  border: none;
+  margin-top: 35px;
+  padding: 22px 50px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #509498;
+}
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #333;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.success {
+  padding: 30px 76px;
+  background-color: #f1eadc;
+  text-align: center;
+}

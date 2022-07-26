@@ -1,14 +1,16 @@
 @import "./../../variables.scss";
 
 .footer {
-  padding-top: 104px;
+  padding-top: 80px;
   background-color: #f1eadc;
+  flex: 0 0 auto;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1110px;
+    max-width: 1060px;
     margin: 0 auto;
+    padding: 0 25px;
     .policityprival {
       .paragraph {
         font-weight: 400;
@@ -59,7 +61,7 @@
       display: flex;
       align-items: center;
       margin-top: 54px;
-
+      margin-right: 25px;
       .phonenumber {
         font-weight: 400;
         font-size: 15px;
@@ -78,10 +80,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1110px;
+  max-width: 1060px;
   margin: 0 auto;
-  padding-bottom: 103px;
+
+  padding: 0 25px;
+  padding-bottom: 50px;
   .linksandpay {
+    margin-right: 25px;
     .links {
       display: flex;
       flex-direction: row;
@@ -89,6 +94,21 @@
       .link {
         margin-right: 12px;
       }
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .footer {
+    padding-top: 20px;
+    .navbar {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 453px) {
+  .policityprival {
+    .paragraph {
+      font-size: 12px;
     }
   }
 }

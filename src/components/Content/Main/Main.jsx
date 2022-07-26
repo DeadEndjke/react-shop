@@ -5,17 +5,20 @@ import Offers from "./Offers/Offers";
 import NewCollection from "./NewCollection/NewCollection";
 import WhatsImportant from "./WhatsImportant/WhatsImportant";
 import DreamTeam from "./DreamTeam/DreamTeam";
+import { useRef } from "react";
 
 const Main = () => {
+  const myRef = useRef(null);
+  const executeScroll = () => myRef.current.scrollIntoView();
   return (
     <>
       <Back />
       <div className={s.main}>
         <div className={s.top}>
-          <Offers />
+          <Offers executeScroll={executeScroll} />
           <RightImages />
         </div>
-        <NewCollection />
+        <NewCollection myRef={myRef} />
         <WhatsImportant />
         <DreamTeam />
       </div>

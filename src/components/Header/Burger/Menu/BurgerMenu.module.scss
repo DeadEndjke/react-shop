@@ -1,0 +1,25 @@
+.burgermenu,
+.contactus {
+  display: none;
+}
+
+.navlink {
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #1f2428;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 934px) {
+  .burgermenu {
+    display: block;
+    margin-left: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactus {
+    display: block;
+  }
+}

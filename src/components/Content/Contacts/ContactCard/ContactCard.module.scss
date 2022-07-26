@@ -1,0 +1,32 @@
+@import "./../../../../variables.scss";
+
+.contactcard {
+  margin-bottom: $marginbottom;
+  .title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 19px;
+  }
+  .value {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (max-width: 949px) {
+    .title {
+      font-size: 15px;
+    }
+    .value {
+      font-size: 17px;
+    }
+  }
+}
+@media screen and(max-width: 733px) {
+  .contactcard {
+    margin-bottom: 50px;
+  }
+}

@@ -16,6 +16,7 @@
     line-height: 140%;
     letter-spacing: 0.02em;
   }
+
   .paragraphfirst {
     margin-bottom: 24px;
   }
@@ -24,5 +25,32 @@
   }
   .link {
     color: #6e9c9f;
+  }
+}
+@media screen and(max-width:1200px) {
+  .about {
+    max-width: none;
+    .heading {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+    }
+    .paragraphfirst,
+    .paragraphsecond,
+    .link {
+      text-align: center;
+      width: 70vw;
+      margin: 0 auto;
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+    @media screen and(max-width:620px) {
+      .paragraphfirst,
+      .paragraphsecond,
+      .link {
+        font-size: 14px;
+      }
+    }
   }
 }

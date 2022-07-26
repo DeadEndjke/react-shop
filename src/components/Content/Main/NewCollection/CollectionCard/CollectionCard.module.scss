@@ -1,6 +1,5 @@
 .collectioncard {
   margin-bottom: 145px;
-  //   background-color: antiquewhite;
   .image {
     &:hover {
       filter: brightness(40%);
@@ -16,7 +15,16 @@
     img {
       height: 478px;
       width: 350px;
+      display: flex;
+      margin: 0 auto;
     }
+    @media screen and (max-width: 771px) {
+      img {
+        height: 410px;
+        width: 300px;
+      }
+    }
+
     .openproduct {
       svg {
         visibility: hidden;
@@ -32,23 +40,11 @@
     letter-spacing: 0.02em;
     margin-bottom: 7px;
   }
-  .prices {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .price,
-    .oldprice {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 140%;
-      letter-spacing: 0.02em;
-      color: #998e78;
-    }
-
-    .oldprice {
-      margin-right: 10px;
-      text-decoration-line: line-through;
-    }
+}
+@media screen and (max-width: 663px) {
+  .collectioncard {
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+    border-radius: 10px;
   }
 }

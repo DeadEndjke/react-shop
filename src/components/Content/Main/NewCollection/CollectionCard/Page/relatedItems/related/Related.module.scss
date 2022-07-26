@@ -1,0 +1,38 @@
+@import "./../../../../.././../../../variables.scss";
+
+.related {
+  margin-right: 30px;
+  margin-bottom: $marginbottom;
+  .relatedcard {
+    .photo {
+      padding: 0 20px;
+      width: 350px;
+      height: 478px;
+      margin-bottom: 24px;
+    }
+    @media screen and (max-width: 441px) {
+      .photo {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .related {
+    margin-right: 0px;
+    margin-bottom: 50px;
+    .relatedcard {
+      text-align: center;
+    }
+  }
+}

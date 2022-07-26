@@ -1,21 +1,31 @@
 import { SvgSelector } from "../../../../../SvgSelector";
 import s from "./CollectionCard.module.scss";
+import { NavLink } from "react-router-dom";
+import Prices from "./Page/prices/Prices";
 
-const CollectionCard = ({ name, price, old_price, img, size, color, id }) => {
+const CollectionCard = ({
+  name,
+  price,
+  old_price,
+  img,
+  size,
+  color,
+  id,
+  related_products,
+}) => {
   return (
     <div className={s.collectioncard}>
-      <div className={s.image}>
-        <img src={img} alt=""></img>
-        <div className={s.openproduct}>
-          <SvgSelector id="openproduct" />
+      <NavLink to={`/shop/${id}`}>
+        <div className={s.image}>
+          <img src={img} alt=""></img>
+          <div className={s.openproduct}>
+            <SvgSelector id="openproduct" />
+          </div>
         </div>
-      </div>
+      </NavLink>
 
       <div className={s.name}>{name}</div>
-      <div className={s.prices}>
-        <div className={s.oldprice}>{old_price}</div>
-        <div className={s.price}>{price}</div>
-      </div>
+      <Prices old_price={old_price} price={price} context="collection" />
     </div>
   );
 };

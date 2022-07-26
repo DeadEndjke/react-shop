@@ -1,0 +1,83 @@
+.shop {
+  .heading {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    margin-top: 162px;
+    margin-bottom: 26px;
+  }
+  .path {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 214px;
+    span {
+      color: #909090;
+    }
+  }
+  @media screen and(max-width:1200px) {
+    .heading {
+      margin-top: 62px;
+    }
+    .path {
+      margin-bottom: 114px;
+    }
+  }
+  .categories {
+    text-align: center;
+    margin-bottom: 92px;
+
+    .button,
+    .active {
+      padding: 17px 62px;
+      margin-right: 10px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+
+      border: 1px solid black;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 1200px) {
+      .button,
+      .active {
+        padding: 5px 18px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        margin-bottom: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    .button {
+      color: black;
+      background-color: white;
+    }
+    .active {
+      color: white;
+      background-color: black;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 65px;
+  }
+  @media screen and(max-width:1200px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and(max-width:676px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}

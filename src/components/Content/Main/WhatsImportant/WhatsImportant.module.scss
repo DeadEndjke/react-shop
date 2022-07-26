@@ -8,9 +8,27 @@
     letter-spacing: 0.02em;
     margin-bottom: 92px;
   }
+  @media screen and (max-width: 423px) {
+    .heading {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
   .triggers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .heading {
+      text-align: center;
+    }
+    .triggers {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

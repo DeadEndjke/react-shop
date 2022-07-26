@@ -1,0 +1,57 @@
+.choosesize {
+  margin-bottom: 59px;
+  // margin-right: 15px;
+  .paragraph {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 34px;
+  }
+
+  @media screen and (max-width: 900px) {
+  }
+
+  .size {
+    button {
+      padding: 8px 15px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      border: 1px solid black;
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+    }
+
+    .active {
+      background-color: black;
+      color: white;
+    }
+    .button {
+      color: black;
+      background-color: white;
+    }
+  }
+  @media screen and (max-width: 441px) {
+    .size {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and(max-width:900px) {
+  .choosesize {
+    margin-right: 15px;
+    .paragraph,
+    .size {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 441px) {
+  .choosesize {
+    margin-right: 0;
+  }
+}
