@@ -5,8 +5,7 @@ import axios from "axios";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const BasketForm = ({ clearBasket }) => {
-  const [issend, setIssend] = useState(false);
+const BasketForm = ({ clearBasket, issend, IsSend }) => {
   const [cities, setCities] = useState([]);
   const {
     register,
@@ -14,14 +13,25 @@ const BasketForm = ({ clearBasket }) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    await sleep(1000);
-    if (data.username !== " " && data.email !== " " && data.phone !== " ") {
-      setIssend(true);
-    } else {
-      alert("There is an error");
-    }
+  const onSubmit = (data) => {
+    console.log(data);
+    IsSend(true);
+    setTimeout(
+      console.log(
+        data.username,
+        ", мы отправим вам вещи в",
+        data.city,
+        ", а при прибытии напишем вам на",
+        data.email,
+        "или позвоним на номер",
+        data.Phone
+      ),
+      3000
+    );
+    clearBasket();
   };
+  // your form submit function which will invoke after successful validation
+
   let url = `https://62dd258257ac3c3f3c650b30.mockapi.io/rucities/`;
   useEffect(() => {
     axios.get(url).then(({ data }) => {
@@ -43,7 +53,7 @@ const BasketForm = ({ clearBasket }) => {
       />
 
       <div className={s.choosecity}>Выберите город</div>
-      <select value={cities.name} name="" id="">
+      <select value={cities.name} {...register("city")}>
         {cities?.map((cities) => (
           <option key={cities.id} value={cities.name}>
             {cities.name}
@@ -55,14 +65,7 @@ const BasketForm = ({ clearBasket }) => {
         {Object.keys(errors).length > 0 &&
           "There are errors, check your console."}
       </div>
-      <input onClick={() => clearBasket()} type="submit" value={"Заказать"} />
-      {issend ? (
-        <div className={s.success}>
-          Спасибо за заказ, он прибудет к вам очень скоро(никогда)
-        </div>
-      ) : (
-        <div></div>
-      )}
+      <input type="submit" value={"Заказать"} />
     </form>
   );
 };

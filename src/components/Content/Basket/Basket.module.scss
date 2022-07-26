@@ -20,6 +20,17 @@
       color: #909090;
     }
   }
+  .success {
+    padding: 30px 76px;
+    background-color: #f1eadc;
+    text-align: center;
+    .shoplink {
+      color: #6e9c9f;
+      &:hover {
+        border-bottom: 1px solid #6e9c9f;
+      }
+    }
+  }
 
   .value {
     font-weight: 500;
@@ -51,5 +62,11 @@
     .checkoutbtn {
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 697px) {
+  .value {
+    text-align: center;
   }
 }
