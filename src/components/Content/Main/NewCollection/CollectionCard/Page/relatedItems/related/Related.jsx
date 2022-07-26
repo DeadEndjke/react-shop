@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Prices from "../../prices/Prices";
 
 const Related = ({ related }) => {
-  //   let { related } = useParams();
-
   let [fetchedData, updateFetchedData] = useState([]);
   let { name, price, img, old_price } = fetchedData;
 

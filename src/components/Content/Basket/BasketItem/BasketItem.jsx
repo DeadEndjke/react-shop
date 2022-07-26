@@ -34,18 +34,18 @@ const BasketItem = ({
       {size ? (
         <div className={s.size}>{size}</div>
       ) : (
-        <div className={s.choosesize}>
-          <div className={s.choose}>choosesize</div>
+        <div className={choosesize}>
+          <div className={s.choose}>choose size</div>
           <div className={s.size}>
             {choosesize?.map((choosesize) => (
               <button
                 key={choosesize.id}
                 onClick={() => {
-                  setActivesize(choosecolor.title);
+                  setActivesize(choosesize.title);
                   updateSize(activesize);
                 }}
                 className={
-                  activesize === choosecolor.title ? s.active : s.button
+                  activesize === choosesize.title ? s.active : s.button
                 }
               >
                 {choosesize.title}

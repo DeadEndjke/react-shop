@@ -14,23 +14,9 @@ const BasketForm = ({ clearBasket, issend, IsSend }) => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
     IsSend(true);
-    setTimeout(
-      console.log(
-        data.username,
-        ", мы отправим вам вещи в",
-        data.city,
-        ", а при прибытии напишем вам на",
-        data.email,
-        "или позвоним на номер",
-        data.Phone
-      ),
-      3000
-    );
     clearBasket();
   };
-  // your form submit function which will invoke after successful validation
 
   let url = `https://62dd258257ac3c3f3c650b30.mockapi.io/rucities/`;
   useEffect(() => {

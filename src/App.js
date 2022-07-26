@@ -14,7 +14,6 @@ function App() {
     setItemId(itemId + 1);
   }
 
-  useEffect(() => console.log(basketitems));
   function clearBasket() {
     setBasketitems([]);
   }
