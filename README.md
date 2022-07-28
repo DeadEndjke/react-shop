@@ -61,5 +61,5 @@ WOMANZING является Pet-проектом, в котором реализ�
 
 # Примеры использования
 
-[![Watch the video](public\img\1.png)](https://www.youtube.com/watch?v=3LXuPtTW5ic)
-[![Watch the video](public\img\mobile.png)](https://youtu.be/XuBY5HYbt_U)
+[![Desktop](public\img\1.png)](https://www.youtube.com/watch?v=3LXuPtTW5ic)
+[![Mobile](public\img\mobile.png)](https://youtu.be/XuBY5HYbt_U)
