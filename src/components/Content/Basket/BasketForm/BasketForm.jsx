@@ -27,12 +27,25 @@ const BasketForm = ({ clearBasket, issend, IsSend }) => {
 
   return (
     <form className={s.basketform} onSubmit={handleSubmit(onSubmit)}>
-      <input required placeholder="Имя" type="text" {...register("username")} />
-
-      <input required placeholder="E-mail" type="text" {...register("email")} />
+      <input
+        required
+        autocomplete="off"
+        placeholder="Имя"
+        type="text"
+        {...register("username")}
+      />
 
       <input
         required
+        autocomplete="off"
+        placeholder="E-mail"
+        type="text"
+        {...register("email")}
+      />
+
+      <input
+        required
+        autocomplete="off"
         placeholder="Телефон"
         type="text"
         {...register("Phone")}

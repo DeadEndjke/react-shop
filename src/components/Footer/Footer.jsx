@@ -73,15 +73,21 @@ export const Footer = () => {
         </div>
         <div className={s.linksandpay}>
           <div className={s.links}>
-            <div className={s.link}>
-              <SvgSelector id="instagram" />
-            </div>
-            <div className={s.link}>
-              <SvgSelector id="facebook" />
-            </div>
-            <div className={s.link}>
-              <SvgSelector id="twitter" />
-            </div>
+            <a href="https://www.instagram.com/womanzing" target="_blank">
+              <div className={s.link}>
+                <SvgSelector id="instagram" />
+              </div>
+            </a>
+            <a href="https://www.facebook.com/womanzing" target="_blank">
+              <div className={s.link}>
+                <SvgSelector id="facebook" />
+              </div>
+            </a>
+            <a href="https://www.twitter.com/womanzing" target="_blank">
+              <div className={s.link}>
+                <SvgSelector id="twitter" />
+              </div>
+            </a>
           </div>
           <div className={s.pay}>
             <img src={visamastercard} alt="" />

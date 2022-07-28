@@ -1,4 +1,4 @@
-import "./App.scss";
+import s from "./App.scss";
 import Content from "./components/Content/Content";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -23,16 +23,23 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Header basketitemscount={basketitemscount} />
-        <Content
-          updateBasketItems={updateBasketItems}
-          basketitems={basketitems}
-          basketitemscount={basketitemscount}
-          itemId={itemId}
-          clearBasket={clearBasket}
-        />
+        <div className={s.header}>
+          <Header basketitemscount={basketitemscount} />
+        </div>
+
+        <div className={s.content}>
+          <Content
+            updateBasketItems={updateBasketItems}
+            basketitems={basketitems}
+            basketitemscount={basketitemscount}
+            itemId={itemId}
+            clearBasket={clearBasket}
+          />
+        </div>
       </div>
-      <Footer />
+      <div className={s.footer}>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -41,6 +41,24 @@ const Content = ({
             />
           }
         />
+        {/* <Route
+          path="/instagram"
+          component={() => {
+            window.location.href = "https://www.instagram.com/womanzing";
+          }}
+        />
+        <Route
+          path="/facebook"
+          component={() => {
+            window.location.href = "https://www.facebook.com/womanzing";
+          }}
+        />
+        <Route
+          path="/twitter"
+          component={() => {
+            window.location.href = "https://www.twitter.com/womanzing";
+          }}
+        /> */}
       </Routes>
     </div>
   );

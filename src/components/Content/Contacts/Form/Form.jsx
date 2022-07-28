@@ -23,12 +23,25 @@ const Form = () => {
 
   return (
     <form className={s.contactform} onSubmit={handleSubmit(onSubmit)}>
-      <input required placeholder="Имя" type="text" {...register("username")} />
+      <input
+        autocomplete="off"
+        required
+        placeholder="Имя"
+        type="text"
+        {...register("username")}
+      />
 
-      <input required placeholder="E-mail" type="text" {...register("email")} />
+      <input
+        autocomplete="off"
+        required
+        placeholder="E-mail"
+        type="text"
+        {...register("email")}
+      />
 
       <input
         required
+        autocomplete="off"
         placeholder="Телефон"
         type="text"
         {...register("Phone")}
@@ -36,6 +49,7 @@ const Form = () => {
 
       <input
         className="messageinput"
+        autocomplete="off"
         placeholder="Cообщение"
         type="text"
         {...register("message")}
